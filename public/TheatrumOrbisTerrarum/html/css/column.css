@@ -1,0 +1,30 @@
+.ec-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* left column */
+p[rend="left-top"],
+p[rend="left-middle"],
+p[rend="left-bottom"] {
+  grid-column: 1;
+}
+
+/* right column */
+p[rend="right-top"],
+p[rend="right-middle"],
+p[rend="right-bottom"] {
+  grid-column: 2;
+}
+
+/* full width */
+p[rend="top"],
+p[rend="wide"],
+p[rend="bottom"] {
+  grid-column: 1 / span 2;
+}
+
+.tall {
+  min-height: 6rem;
+}
